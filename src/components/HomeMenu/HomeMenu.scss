@@ -1,0 +1,33 @@
+.home-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: absolute;
+    padding: 10px;
+    border-bottom: 1px solid var(--blue-color);
+    transition: transform .4s ease-in;
+  }
+
+  li:hover {
+    transform: translateX(10px)
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      width: fit-content;
+      position: static;
+    }
+  }
+}

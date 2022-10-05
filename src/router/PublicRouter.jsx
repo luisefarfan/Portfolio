@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../pages/Home'
+import HomePage from '../pages/HomePage'
 
 export const PublicRouter = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<HomePage />} />
     </Routes>
   )
 }

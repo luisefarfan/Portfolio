@@ -1,12 +1,13 @@
-main {
+.home-section {
   width: 100vw;
   height: 100vh;
-  background-image: url('../../assets/pages/Home/background.svg');
+  background-image: url('../../../assets/pages/Home/background.svg');
   background-position: top;
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.title {
+.title-container {
   position: absolute;
   left: 50%;
   top: 50%;
