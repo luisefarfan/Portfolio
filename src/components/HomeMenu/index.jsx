@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { cleanAnimations } from '../../utils/animations'
+import { clearAnimations } from '../../utils/animations'
 import './HomeMenu.scss'
 
 const HomeMenu = ({ centerTitleRef }) => {
@@ -24,7 +24,7 @@ const HomeMenu = ({ centerTitleRef }) => {
     calcPositions()
     window.addEventListener('resize', calcPositions)
 
-    cleanAnimations(refs)
+    clearAnimations(refs)
   }, [])
 
   return (

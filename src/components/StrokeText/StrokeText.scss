@@ -1,0 +1,24 @@
+.stroke-text {
+  color: transparent;
+  -moz-outline-width: 1px;
+  -webkit-text-stroke-width: 1px;
+  transition: all .4s ease-in;
+}
+
+.stroke-text.white {
+  -moz-outline-color: var(--white-color);
+  -webkit-text-stroke-color: var(--white-color);
+}
+
+.stroke-text.white:hover {
+  color: var(--white-color);
+}
+
+.stroke-text.blue {
+  -moz-outline-color: var(--blue-color);
+  -webkit-text-stroke-color: var(--blue-color);
+}
+
+.stroke-text.blue:hover {
+  color: var(--blue-color);
+}
