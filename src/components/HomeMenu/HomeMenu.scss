@@ -7,11 +7,12 @@
     position: absolute;
     padding: 10px;
     border-bottom: 1px solid var(--blue-color);
-    transition: transform .4s ease-in;
+    transition: all .3s ease-in;
   }
 
   li:hover {
-    transform: translateX(10px)
+    transform: scale(1.1);
+    padding: 10px 25px;
   }
 
   a {

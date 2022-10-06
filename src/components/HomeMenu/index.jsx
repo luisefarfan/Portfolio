@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
+import messages from '../../language/messages'
 import { clearAnimations } from '../../utils/animations'
 import './HomeMenu.scss'
 
-const HomeMenu = ({ centerTitleRef }) => {
+const HomeMenu = ({ centerTitleRef, lang }) => {
   const [positions, setPositions] = useState([])
 
   const calcPositions = () => {
@@ -29,10 +30,10 @@ const HomeMenu = ({ centerTitleRef }) => {
 
   return (
     <ul className='home-menu'>
-      <li ref={refs[0]} className='animate__animated animate__fadeInLeft animate__delay-1s' style={positions[0]}><a href="#about">Sobre mí</a></li>
-      <li ref={refs[1]} className='animate__animated animate__fadeInLeft animate__delay-2s' style={positions[1]}><a href="#whatIDo">¿Qué hago?</a></li>
-      <li ref={refs[2]} className='animate__animated animate__fadeInLeft animate__delay-3s' style={positions[2]}><a href="#myJob">Mi trabajo</a></li>
-      <li ref={refs[3]} className='animate__animated animate__fadeInLeft animate__delay-4s' style={positions[3]}><a href="#experience">Experiencia y habilidades</a></li>
+      <li ref={refs[0]} className='animate__animated animate__fadeInLeft animate__delay-1s' style={positions[0]}><a href="#about">{messages[lang].home.menu.option1}</a></li>
+      <li ref={refs[1]} className='animate__animated animate__fadeInLeft animate__delay-2s' style={positions[1]}><a href="#whatIDo">{messages[lang].home.menu.option2}</a></li>
+      <li ref={refs[2]} className='animate__animated animate__fadeInLeft animate__delay-3s' style={positions[2]}><a href="#myJob">{messages[lang].home.menu.option3}</a></li>
+      <li ref={refs[3]} className='animate__animated animate__fadeInLeft animate__delay-4s' style={positions[3]}><a href="#experience">{messages[lang].home.menu.option4}</a></li>
     </ul>
   )
 }
