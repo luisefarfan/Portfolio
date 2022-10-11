@@ -29,7 +29,7 @@ const Home = () => {
       </div>
       <HomeMenu menuContent={menu} centerTitleRef={centerTitleRef} />
       <div ref={buttonContainerRef} className='animate__animated animate__fadeInUp animate__delay-1s cv-button-container'>
-        <Button text={cv} color="blue" className='w-fit mb-5' />
+        <Button text={cv} color="blue" className='w-fit md:mr-5 mb-5 md:mb-0' />
         <LanguageSelector />
       </div>
     </section>
