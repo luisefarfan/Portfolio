@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { LanguageContext } from '../../language/context/LanguageContext'
+import { LanguageContext } from '../../content/context/LanguageContext'
 import Switch from '../Switch'
 
 const LanguageSelector = () => {
