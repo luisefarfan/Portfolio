@@ -35,7 +35,7 @@ const Experience = ({ passedRef }) => {
 
       <div className='container mt-20'>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center items-center mb-16 md:mb-0'>
             <NormalImage src={bigIcon} />
           </div>
           <div className='flex flex-col'>
