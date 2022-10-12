@@ -20,7 +20,6 @@ const Header = ({ activeSection, handleSectionChange }) => {
       </div>
       <div className='header-menu'>
         <ul>
-          <li onClick={() => handleSectionChange(menuIds.home)} className={activeSection === menuIds.home && 'active'}>{menu.home}</li>
           <li onClick={() => handleSectionChange(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
           <li onClick={() => handleSectionChange(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
           <li onClick={() => handleSectionChange(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
@@ -39,7 +38,6 @@ const Header = ({ activeSection, handleSectionChange }) => {
 
       <div className={`sm-header-menu ${openMenu && 'open'}`}>
         <ul className='mb-16'>
-          <li onClick={() => handleSectionChange(menuIds.home)} className={activeSection === menuIds.home && 'active'}>{menu.home}</li>
           <li onClick={() => handleSectionChange(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
           <li onClick={() => handleSectionChange(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
           <li onClick={() => handleSectionChange(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
