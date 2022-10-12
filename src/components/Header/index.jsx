@@ -45,8 +45,8 @@ const Header = ({ activeSection, handleSectionChange }) => {
           <li onClick={() => handleSectionChange(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
           <li onClick={() => handleSectionChange(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
         </ul>
-        <div className='flex justify-around'>
-          <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" />
+        <div className='flex flex-col justify-around items-center'>
+          <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mb-5' />
           <LanguageSelector />
         </div>
       </div>
