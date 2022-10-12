@@ -29,7 +29,7 @@ const Experience = ({ passedRef }) => {
               <p className='w-6/12'>{text}</p>
             </div>
           </AnimationOnScroll>
-          <NormalImage src={scrollImage} alt="scroll" className="animate-pulse" />
+          <NormalImage src={scrollImage} alt="scroll" className="animate-pulse" width="40" />
         </div>
       </div>
 
