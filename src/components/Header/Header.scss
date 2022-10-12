@@ -97,12 +97,10 @@
     display: block;
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    opacity: 0;
     background-color: var(--dark-blue-color);
-    transition: all .3s ease-in;
+    transition: opacity .3s;
     padding: 2rem;
+    box-shadow: 0px 3px 6px #00000059;
 
     li {
       cursor: pointer;
@@ -121,7 +119,14 @@
     }
   }
 
+  .sm-header-menu:not(.open) {
+    left: -100%;
+    opacity: 0;
+  }
+
   .sm-header-menu.open {
     opacity: 1;
+    left: 0;
+    right: 0;
   }
 }
