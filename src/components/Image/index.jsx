@@ -9,7 +9,7 @@ const Image = ({ src, alt, width, height }) => {
 
 export const NormalImage = (props) => {
   return (
-    <div className={props.className}>
+    <div className={props.className} style={props.style}>
       <Image {...props} />
     </div>
   )

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import WithHeader from '../../components/Header/WithHeader'
 import About from './About'
+import Experience from './Experience'
 import Home from './Home'
 import './HomePage.scss'
 
@@ -8,11 +9,13 @@ const HomePage = () => {
   const [activeSection, setActiveSection] = useState('')
   const homeRef = useRef()
   const aboutRef = useRef()
+  const experienceRef = useRef()
 
   const handleSectionChange = (section) => {
     const refById = {
       home: homeRef,
-      about: aboutRef
+      about: aboutRef,
+      experience: experienceRef
     }
 
     setActiveSection(section)
@@ -21,9 +24,10 @@ const HomePage = () => {
 
   return (
     <main className='homepage'>
-      <Home homeRef={homeRef} handleSectionChange={handleSectionChange} />
+      <Home passedRef={homeRef} handleSectionChange={handleSectionChange} />
       <WithHeader handleSectionChange={handleSectionChange} activeSection={activeSection}>
-        <About aboutRef={aboutRef} />
+        <About passedRef={aboutRef} />
+        <Experience passedRef={experienceRef} />
       </WithHeader>
     </main>
   )

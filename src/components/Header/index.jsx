@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { LanguageContext } from '../../content/context/LanguageContext'
 import homeContent, { menuIds } from '../../content/home'
 import Button from '../Button'
@@ -9,6 +10,8 @@ import './Header.scss'
 const Header = ({ activeSection, handleSectionChange }) => {
   const { lang } = useContext(LanguageContext)
   const { menu, cv } = homeContent[lang]
+
+  const navigate = useNavigate()
 
   return (
     <header className='header'>
@@ -25,7 +28,7 @@ const Header = ({ activeSection, handleSectionChange }) => {
         </ul>
       </div>
       <div className='lang-cv-container'>
-        <Button text={cv} color="blue" className='w-fit md:mr-5 mb-5 md:mb-0' />
+        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit md:mr-5 mb-5 md:mb-0' />
         <LanguageSelector />
       </div>
     </header>

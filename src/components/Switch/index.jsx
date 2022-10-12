@@ -36,8 +36,6 @@ const Switch = ({ choices, initialChoice, onChange }) => {
     onChange(e)
   }
 
-  console.log({ val: selectedChoice.value })
-
   return (
     <form ref={toggleRef} className="toggle">
       <input onChange={handleChange} ref={choice1Ref} type="radio" id="choice1" name="choice" value={choices[0].value} checked={selectedChoice.value === choices[0].value} />
