@@ -5,7 +5,7 @@ const homeContent = {
       option1: 'About me',
       option2: 'My Experience',
       option3: 'My Skills',
-      option4: 'What I do?',
+      option4: 'My Projects',
     },
     cv: 'Download my CV'
   },
@@ -15,7 +15,7 @@ const homeContent = {
       option1: 'Sobre mi',
       option2: 'Mi Experiencia',
       option3: 'Mis Habilidades',
-      option4: '¿Qué hago?',
+      option4: 'Mis proyectos',
     },
     cv: 'Ver curriculum'
   }
@@ -26,7 +26,7 @@ export const menuIds = {
   option1: 'about',
   option2: 'experience',
   option3: 'skills',
-  option4: 'whatIDo',
+  option4: 'projects',
 }
 
 export default homeContent
