@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Zoom, Fade } from 'react-awesome-reveal'
+import { Zoom, Fade, AttentionSeeker, Slide } from 'react-awesome-reveal'
 import ExperienceItem from '../../../components/ExperienceItem'
 import { NormalImage } from '../../../components/Image'
 import StrokeText from '../../../components/StrokeText'
@@ -23,7 +23,7 @@ const Experience = ({ passedRef }) => {
             <Title level="h2">
               <StrokeText color={'blue'}>{title}</StrokeText>
             </Title>
-            <p className='lg:w-8/12 w-10/12'>{text}</p>
+            {/* <p className='lg:w-8/12 w-10/12'>{text}</p> */}
           </div>
         </Zoom>
       </div>
@@ -37,9 +37,11 @@ const Experience = ({ passedRef }) => {
           </div>
           <div className='flex flex-col'>
             {experiences.map((experience, index) => (
-              <div className='mb-5' key={index}>
-                <ExperienceItem experience={experience} />
-              </div>
+              <AttentionSeeker effect='pulse' cascade>
+                <div className='mb-5' key={index}>
+                  <ExperienceItem experience={experience} />
+                </div>
+              </AttentionSeeker>
             ))}
           </div>
         </div>

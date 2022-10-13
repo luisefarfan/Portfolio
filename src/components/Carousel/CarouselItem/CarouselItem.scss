@@ -1,13 +1,15 @@
 .carousel-item {
   border-radius: 25px;
-  width: 350px;
-  height: 400px;
+  // While using the normal grid
+  // width: 350px;
+  // height: 400px;
   padding: 2rem;
   background-color: var(--secondary-dark-blue-color);
   box-shadow: 0px 3px 8px #00000066;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .2s;
 
   img {
     margin: auto;
@@ -18,8 +20,16 @@
   .title {
     font-size: 1.5rem;
     display: block;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
+    margin-bottom: 10px;
+    line-height: 1.75rem;
   }
+
+  height: 100%;
+}
+
+.carousel-item:hover {
+  transform: scale(1.02);
 }
 
 .carousel-item.active {
@@ -36,8 +46,8 @@
 
 @media only screen and (max-width: 1025px) {
   .carousel-item {
-    width: 250px;
-    height: 300px;
+    // width: 250px;
+    // height: 300px;
     padding: 1rem;
 
     img {
@@ -48,7 +58,7 @@
     .title {
       font-size: 1.25rem;
       display: block;
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
   }
 
@@ -62,8 +72,8 @@
 
 @media only screen and (max-width: 768px) {
   .carousel-item {
-    width: 300px;
-    height: 350px;
+    // width: 300px;
+    // height: 350px;
     padding: 1rem;
 
     img {
@@ -74,7 +84,7 @@
     .title {
       font-size: 1.25rem;
       display: block;
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
   }
 

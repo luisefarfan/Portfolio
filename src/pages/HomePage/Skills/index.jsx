@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
-import { Zoom } from 'react-awesome-reveal'
+import { AttentionSeeker, Bounce, Zoom } from 'react-awesome-reveal'
 import Carousel from '../../../components/Carousel'
+import CarouselItem from '../../../components/Carousel/CarouselItem'
 import StrokeText from '../../../components/StrokeText'
 import { Title } from '../../../components/Title'
 import { LanguageContext } from '../../../content/context/LanguageContext'
@@ -9,7 +10,7 @@ import './Skills.scss'
 
 const Skills = ({ passedRef }) => {
   const { lang } = useContext(LanguageContext)
-  const { title1, title2, text, techSkills, softSkills } = skillsContent[lang]
+  const { title1, title2, text, techSkills, softSkills, techTitle, softTitle } = skillsContent[lang]
 
   return (
     <section ref={passedRef} className="skills-section">
@@ -24,8 +25,23 @@ const Skills = ({ passedRef }) => {
           </div>
         </Zoom>
 
-        <div className='mt-20 text-center'>
-          <Carousel items={techSkills} />
+        {/* <div className='mt-20 text-center'> */}
+        <div className='mt-20'>
+          {/* <Carousel items={techSkills} /> */}
+
+          <Title level={'h3'} className="mb-8">{techTitle}</Title>
+          <div className='grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4'>
+            <AttentionSeeker effect='pulse' cascade damping={0.25}>
+              {techSkills.map((skill) => <CarouselItem key={skill.title} item={skill} />)}
+            </AttentionSeeker>
+          </div>
+
+          <Title level={'h3'} className="mb-8 mt-20">{softTitle}</Title>
+          <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
+            <AttentionSeeker effect='pulse' cascade damping={0.25}>
+              {softSkills.map((skill) => <CarouselItem key={skill.title} item={skill} />)}
+            </AttentionSeeker>
+          </div>
         </div>
       </div>
     </section>

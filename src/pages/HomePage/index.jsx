@@ -16,7 +16,7 @@ const HomePage = () => {
   const skillsRef = useRef()
 
   const [homeRef, inView, entry] = useInView({
-    threshold: 0.5
+    threshold: 0.75
   })
 
   const handleSectionChange = (section) => {
@@ -34,13 +34,13 @@ const HomePage = () => {
     <main className='homepage'>
       <Home passedRef={homeRef} handleSectionChange={handleSectionChange} />
       <WithHeader showHeader={!inView} handleSectionChange={handleSectionChange} activeSection={activeSection}>
-        <InView threshold={0.5} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
+        <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
           <About passedRef={aboutRef} />
         </InView>
-        <InView threshold={0.5} onChange={(inView) => inView && setActiveSection(menuIds.option2)}>
+        <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option2)}>
           <Experience passedRef={experienceRef} />
         </InView>
-        <InView threshold={0.5} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
+        <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
           <Skills passedRef={skillsRef} />
         </InView>
       </WithHeader>

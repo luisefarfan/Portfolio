@@ -2,12 +2,12 @@ const aboutContent = {
   en: {
     title1: 'About',
     title2: 'Me',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci'
+    content: 'Hello! I am Luis Farfán and I am a Software Engineer. I am passionate about technology. I\'m always seeking to learn new things and apply them in my professional life and impact end users with software products. I have experience in most areas related to web technologies, from backend and frontend, database design, to deploying web applications in production.'
   },
   es: {
     title1: 'Sobre',
     title2: 'Mi',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci'
+    content: '¡Hola! Soy Luis Farfán y soy un Ingeniero de Software. Soy un apasionado de la tecnología. Siempre busco aprender cosas nuevas para poder aplicarlas en mi vida profesional e impactar con productos de software a los usuarios finales. Tengo experiencia en la mayoría de las áreas relacionadas con las tecnologías web, desde backend y frontend, diseño de base de datos, hasta desplegar una aplicación web en producción.'
   }
 }
 
