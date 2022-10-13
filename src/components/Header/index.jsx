@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { LanguageContext } from '../../content/context/LanguageContext'
 import homeContent, { menuIds } from '../../content/home'
 import Button from '../Button'
@@ -7,14 +6,14 @@ import LanguageSelector from '../LanguageSelector'
 import StrokeText from '../StrokeText'
 import './Header.scss'
 
-const Header = ({ activeSection, handleSectionChange }) => {
+const Header = ({ activeSection, handleSectionChange, showHeader }) => {
   const { lang } = useContext(LanguageContext)
   const { menu, cv } = homeContent[lang]
 
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <header className='header'>
+    <header className={`header ${showHeader && 'visible'}`}>
       <div className='lg:text-4xl md:text-3xl text-2xl'>
         <span>Luis</span><StrokeText color={'white'}>Farfán</StrokeText>
       </div>

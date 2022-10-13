@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 import StrokeText from '../../../components/StrokeText'
 import { Title } from '../../../components/Title'
 import aboutContent from '../../../content/about'
@@ -9,6 +8,7 @@ import aboutMeImage from '../../../assets/pages/About/aboutMeImage.jpg'
 import './About.scss'
 import { NormalImage, RoundedImage } from '../../../components/Image'
 import { menuIds } from '../../../content/home'
+import { Fade } from 'react-awesome-reveal'
 
 const About = ({ passedRef }) => {
   const { lang } = useContext(LanguageContext)
@@ -17,7 +17,7 @@ const About = ({ passedRef }) => {
 
   return (
     <section ref={passedRef} className='about-section' id={menuIds.option1}>
-      <AnimationOnScroll animateIn='animate__fadeIn' animateOnce={true}>
+      <Fade direction='left' triggerOnce>
         <div className='container'>
           <div className='grid lg:grid-cols-2 grid-cols-1'>
             <div className="p-10">
@@ -34,7 +34,7 @@ const About = ({ passedRef }) => {
             </div>
           </div>
         </div>
-      </AnimationOnScroll>
+      </Fade>
     </section>
   )
 }

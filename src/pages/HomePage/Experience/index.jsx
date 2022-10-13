@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import { Zoom, Fade } from 'react-awesome-reveal'
 import ExperienceItem from '../../../components/ExperienceItem'
 import { NormalImage } from '../../../components/Image'
 import StrokeText from '../../../components/StrokeText'
@@ -15,20 +15,19 @@ const Experience = ({ passedRef }) => {
   const { lang } = useContext(LanguageContext)
 
   const { title, text, experiences } = experienceContent[lang]
-  debugger
 
   return (
     <section id={menuIds.option2} ref={passedRef} className="experience-section">
       <div className='container'>
         <div className="flex items-center">
-          <AnimationOnScroll animateIn='animate__bounceInLeft' animateOnce={true}>
+          <Zoom triggerOnce>
             <div>
               <Title level="h2">
                 <StrokeText color={'blue'}>{title}</StrokeText>
               </Title>
               <p className='lg:w-8/12 w-10/12'>{text}</p>
             </div>
-          </AnimationOnScroll>
+          </Zoom>
           <NormalImage src={scrollImage} alt="scroll" className="animate-pulse" width="40" />
         </div>
       </div>
@@ -36,7 +35,9 @@ const Experience = ({ passedRef }) => {
       <div className='container mt-20'>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
           <div className='flex justify-center items-center mb-16 md:mb-0'>
-            <NormalImage src={bigIcon} />
+            <Fade delay={500} triggerOnce>
+              <NormalImage src={bigIcon} />
+            </Fade>
           </div>
           <div className='flex flex-col'>
             {experiences.map((experience, index) => (
