@@ -30,7 +30,7 @@ const Experience = ({ passedRef }) => {
 
       <div className='container mt-20'>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
-          <div className='flex justify-center items-center mb-16 md:mb-0'>
+          <div className='flex justify-center items-center mb-16 lg:mb-0'>
             <Fade delay={500} triggerOnce>
               <NormalImage src={bigIcon} />
             </Fade>

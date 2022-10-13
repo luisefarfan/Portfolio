@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
+import { Fade } from 'react-awesome-reveal'
 import StrokeText from '../../../components/StrokeText'
 import { Title } from '../../../components/Title'
 import aboutContent from '../../../content/about'
 import { LanguageContext } from '../../../content/context/LanguageContext'
 import icon from '../../../assets/pages/About/aboutIcon.svg'
 import aboutMeImage from '../../../assets/pages/About/aboutMeImage.jpg'
-import './About.scss'
 import { NormalImage, RoundedImage } from '../../../components/Image'
 import { menuIds } from '../../../content/home'
-import { Fade } from 'react-awesome-reveal'
+import './About.scss'
 
 const About = ({ passedRef }) => {
   const { lang } = useContext(LanguageContext)
@@ -20,10 +20,10 @@ const About = ({ passedRef }) => {
       <Fade direction='left' triggerOnce>
         <div className='container'>
           <div className='grid lg:grid-cols-2 grid-cols-1'>
-            <div className="p-10">
+            <div className="lg:pr-10">
               <RoundedImage src={aboutMeImage} />
             </div>
-            <div className="flex flex-col justify-center p-10">
+            <div className="flex flex-col justify-center lg:pl-10">
               <div className="flex items-center">
                 <Title level="h2">
                   <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>

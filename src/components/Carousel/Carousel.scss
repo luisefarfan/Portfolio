@@ -1,0 +1,39 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  button {
+    transition: all .2s ease-in;
+  }
+
+  img {
+    width: 4rem;
+  }
+
+  button:first-child {
+    margin-right: 1rem;
+  }
+
+  button:last-child {
+    margin-left: 1rem;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+}
