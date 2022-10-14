@@ -1,6 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./styles/palette.scss');
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
+  box-sizing: border-box;
+  color: var(--white-color);
   margin: 0;
-  padding: 0;
-  color: #E0EDF5;
   font-family: 'Kumbh Sans';
+}
+
+.color-blue {
+  color: var(--blue-color)
 }

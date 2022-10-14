@@ -1,0 +1,146 @@
+.header {
+  background-color: var(--dark-blue-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  z-index: 10000;
+  box-shadow: 0px 3px 6px #00000059;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.header.visible {
+  opacity: 1;
+}
+
+.header-menu {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      cursor: pointer;
+      transition: all .2s ease-in;
+      border-bottom: 1px solid var(--dark-blue-color);
+    }
+
+    li:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    li.active {
+      color: var(--blue-color);
+      border-bottom: 1px solid var(--blue-color);
+    }
+
+    li:hover {
+      color: var(--blue-color);
+      border-bottom: 1px solid var(--blue-color);
+    }
+  }
+}
+
+.lang-cv-container {
+  display: flex;
+  align-items: center;
+}
+
+.sm-menu-button {
+  display: none;
+}
+
+.sm-header-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .header-menu {
+    display: none;
+  }
+
+  .lang-cv-container {
+    display: none;
+  }
+
+  .sm-menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 2rem;
+    border: 0;
+    background: transparent;
+
+    .sm-menu-button-line {
+      height: 2px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: white;
+      transition: all .3s ease;
+      transform-origin: left;
+    }
+
+    .sm-menu-button-line:not(:last-child) {
+      margin-bottom: 0.98rem;
+    }
+  }
+
+  .sm-menu-button.open {
+    .sm-menu-button-line:first-child {
+      transform: rotate(45deg);
+    }
+
+    .sm-menu-button-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .sm-menu-button-line:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .sm-header-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: var(--dark-blue-color);
+    transition: opacity .3s;
+    padding: 2rem;
+    box-shadow: 0px 3px 6px #00000059;
+
+    li {
+      cursor: pointer;
+      transition: all .2s ease-in;
+      border-bottom: 2px solid var(--dark-blue-color);
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    li:hover {
+      transform: scale(1.02);
+      color: var(--blue-color);
+      border-bottom: 2px solid var(--blue-color);
+    }
+  }
+
+  .sm-header-menu:not(.open) {
+    left: -100%;
+    opacity: 0;
+  }
+
+  .sm-header-menu.open {
+    opacity: 1;
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.stroke-text {
+  color: transparent;
+  outline-width: 1px;
+  -moz-outline-width: 1px;
+  -webkit-text-stroke-width: 1px;
+  transition: all .4s ease-in;
+}
+
+.stroke-text.white {
+  outline-color: var(--white-color);
+  -moz-outline-color: var(--white-color);
+  -webkit-text-stroke-color: var(--white-color);
+}
+
+.stroke-text.white:hover {
+  color: var(--white-color);
+}
+
+.stroke-text.blue {
+  outline-color: var(--blue-color);
+  -moz-outline-color: var(--blue-color);
+  -webkit-text-stroke-color: var(--blue-color);
+}
+
+.stroke-text.blue:hover {
+  color: var(--blue-color);
+}
