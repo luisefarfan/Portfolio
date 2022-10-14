@@ -167,112 +167,112 @@ const skillsContent = {
     techSkills: [
       {
         title: 'Javascript',
-        description: '5 years',
+        description: '5 años',
         img: javascriptImg
       },
       {
         title: 'React',
-        description: '2 years',
+        description: '2 años',
         img: cssImg
       },
       {
         title: 'Symfony',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'NodeJS',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'ExpressJS',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'NextJS',
-        description: '1 years',
+        description: '1 años',
         img: cssImg
       },
       {
         title: 'HTML',
-        description: '5 years',
+        description: '5 años',
         img: htmlImg
       },
       {
         title: 'Twig',
-        description: '3 years',
+        description: '3 años',
         img: htmlImg
       },
       {
         title: 'CSS',
-        description: '5 years',
+        description: '5 años',
         img: cssImg
       },
       {
         title: 'Bootstrap',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'Tailwind CSS',
-        description: '1 years',
+        description: '1 años',
         img: cssImg
       },
       {
         title: 'PHP',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'Bases de datos SQL',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'Bases de datos No-SQL',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'AWS',
-        description: '1 years',
+        description: '1 años',
         img: cssImg
       },
       {
         title: 'GCP',
-        description: '1 years',
+        description: '1 años',
         img: cssImg
       },
       {
         title: 'Docker',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'Docker-compose',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
       {
         title: 'Git',
-        description: '5 years',
+        description: '5 años',
         img: cssImg
       },
       {
         title: 'React Testing Library',
-        description: '1 years',
+        description: '1 años',
         img: cssImg
       },
       {
         title: 'Jest',
-        description: '2 years',
+        description: '2 años',
         img: cssImg
       },
       {
         title: 'Scrum',
-        description: '3 years',
+        description: '3 años',
         img: cssImg
       },
     ]
