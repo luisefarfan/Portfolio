@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Fade } from 'react-awesome-reveal'
 import { menuIds } from '../../content/home'
-import { clearAnimations } from '../../utils/animations'
 import './HomeMenu.scss'
 
 const HomeMenu = ({ centerTitleRef, menuContent, handleSectionChange }) => {
@@ -15,16 +15,8 @@ const HomeMenu = ({ centerTitleRef, menuContent, handleSectionChange }) => {
     ])
   }
 
-  let refs = []
-  for (let i = 0; i < 4; i++) {
-    const ref = useRef()
-    refs.push(ref)
-  }
-
   useEffect(() => {
     window.addEventListener('resize', calcPositions)
-
-    clearAnimations(refs)
   }, [])
 
   useEffect(() => {
@@ -33,10 +25,12 @@ const HomeMenu = ({ centerTitleRef, menuContent, handleSectionChange }) => {
 
   return (
     <ul className='home-menu'>
-      <li onClick={() => handleSectionChange(menuIds.option1)} ref={refs[0]} className='animate__animated animate__fadeInLeft animate__delay-1s' style={positions[0]}>{menuContent.option1}</li>
-      <li onClick={() => handleSectionChange(menuIds.option2)} ref={refs[1]} className='animate__animated animate__fadeInLeft animate__delay-2s' style={positions[1]}>{menuContent.option2}</li>
-      <li onClick={() => handleSectionChange(menuIds.option3)} ref={refs[2]} className='animate__animated animate__fadeInLeft animate__delay-3s' style={positions[2]}>{menuContent.option3}</li>
-      <li onClick={() => handleSectionChange(menuIds.option4)} ref={refs[3]} className='animate__animated animate__fadeInLeft animate__delay-4s' style={positions[3]}>{menuContent.option4}</li>
+      <Fade direction='left' cascade delay={1000}>
+        <li onClick={() => handleSectionChange(menuIds.option1)} style={positions[0]}>{menuContent.option1}</li>
+        <li onClick={() => handleSectionChange(menuIds.option2)} style={positions[1]}>{menuContent.option2}</li>
+        <li onClick={() => handleSectionChange(menuIds.option3)} style={positions[2]}>{menuContent.option3}</li>
+        <li onClick={() => handleSectionChange(menuIds.option4)} style={positions[3]}>{menuContent.option4}</li>
+      </Fade>
     </ul>
   )
 }
