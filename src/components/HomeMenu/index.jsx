@@ -24,14 +24,14 @@ const HomeMenu = ({ centerTitleRef, menuContent, handleSectionChange }) => {
   }, [centerTitleRef])
 
   return (
-    <ul className='home-menu'>
-      <Fade direction='left' cascade delay={1000}>
+    <Fade direction='left' cascade delay={500} triggerOnce>
+      <ul className='home-menu'>
         <li onClick={() => handleSectionChange(menuIds.option1)} style={positions[0]}>{menuContent.option1}</li>
         <li onClick={() => handleSectionChange(menuIds.option2)} style={positions[1]}>{menuContent.option2}</li>
         <li onClick={() => handleSectionChange(menuIds.option3)} style={positions[2]}>{menuContent.option3}</li>
         <li onClick={() => handleSectionChange(menuIds.option4)} style={positions[3]}>{menuContent.option4}</li>
-      </Fade>
-    </ul>
+      </ul>
+    </Fade>
   )
 }
 

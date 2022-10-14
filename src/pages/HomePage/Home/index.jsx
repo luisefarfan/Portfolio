@@ -18,7 +18,7 @@ const Home = ({ passedRef, handleSectionChange }) => {
   return (
     <section ref={passedRef} className='home-section' id={menuIds.home}>
       <div ref={centerTitleRef} className='title-container'>
-        <Fade direction='left'>
+        <Fade direction='left' triggerOnce>
           <Title level="h1">
             <span className='color-blue'>Luis</span><StrokeText color="blue">Farfán</StrokeText>
           </Title>
@@ -26,7 +26,7 @@ const Home = ({ passedRef, handleSectionChange }) => {
       </div>
       <HomeMenu handleSectionChange={handleSectionChange} menuContent={menu} centerTitleRef={centerTitleRef} />
       <div className='cv-button-container'>
-        <Fade direction='up' delay={1000}>
+        <Fade direction='up' delay={500} triggerOnce>
           <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit md:mr-5 md:mb-0 mb-5' />
           <LanguageSelector />
         </Fade>
