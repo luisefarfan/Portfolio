@@ -3,9 +3,9 @@ const homeContent = {
     menu: {
       home: 'Home',
       option1: 'About me',
-      option2: 'My Experience',
-      option3: 'My Skills',
-      option4: 'My Projects',
+      option2: 'Experience',
+      option3: 'Skills',
+      option4: 'Projects',
     },
     cv: 'Download my CV'
   },
@@ -13,9 +13,9 @@ const homeContent = {
     menu: {
       home: 'Inicio',
       option1: 'Sobre mi',
-      option2: 'Mi Experiencia',
-      option3: 'Mis Habilidades',
-      option4: 'Mis proyectos',
+      option2: 'Experiencia',
+      option3: 'Habilidades',
+      option4: 'Proyectos',
     },
     cv: 'Ver curriculum'
   }
