@@ -4,7 +4,7 @@ import { langReducer } from "./langReducer";
 export const LanguageContext = createContext()
 
 const init = () => {
-  const lang = sessionStorage.getItem('lang')
+  const lang = localStorage.getItem('lang')
 
   return {
     lang: lang || 'en'
@@ -26,7 +26,7 @@ export const LanguageProvider = ({ children }) => {
 
     dispatch(action)
 
-    sessionStorage.setItem('lang', lang)
+    localStorage.setItem('lang', lang)
   }
 
   return (
