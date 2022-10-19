@@ -6,6 +6,7 @@ import About from './About'
 import Experience from './Experience'
 import Home from './Home'
 import './HomePage.scss'
+import Projects from './Projects'
 import Skills from './Skills'
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
   const aboutRef = useRef()
   const experienceRef = useRef()
   const skillsRef = useRef()
+  const projectsRef = useRef()
 
   const [homeRef, inView, entry] = useInView({
     threshold: 0.75
@@ -21,10 +23,11 @@ const HomePage = () => {
 
   const handleSectionChange = (section) => {
     const refById = {
-      home: homeRef,
-      about: aboutRef,
-      experience: experienceRef,
-      skills: skillsRef
+      [menuIds.home]: homeRef,
+      [menuIds.option1]: aboutRef,
+      [menuIds.option2]: experienceRef,
+      [menuIds.option3]: skillsRef,
+      [menuIds.option4]: projectsRef
     }
 
     refById[section].current.scrollIntoView()
@@ -42,6 +45,9 @@ const HomePage = () => {
         </InView>
         <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
           <Skills passedRef={skillsRef} />
+        </InView>
+        <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option4)}>
+          <Projects passedRef={projectsRef} />
         </InView>
       </WithHeader>
     </main>
