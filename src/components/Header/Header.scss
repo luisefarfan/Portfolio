@@ -108,6 +108,9 @@
   }
 
   .sm-header-menu {
+    overflow-y: auto;
+    max-height: 80vh;
+    // scroll
     display: block;
     position: absolute;
     top: 100%;
