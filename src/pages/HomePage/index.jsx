@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react'
 import { InView, useInView } from 'react-intersection-observer'
 import WithHeader from '../../components/Header/WithHeader'
+import LateralContact from '../../components/LateralContact'
 import { menuIds } from '../../content/home'
 import About from './About'
 import Experience from './Experience'
 import Home from './Home'
-import './HomePage.scss'
 import Projects from './Projects'
 import Skills from './Skills'
+import './HomePage.scss'
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState('')
@@ -18,7 +19,8 @@ const HomePage = () => {
   const projectsRef = useRef()
 
   const [homeRef, inView, entry] = useInView({
-    threshold: 0.75
+    threshold: 0.5,
+    initialInView: true
   })
 
   const handleSectionChange = (section) => {
@@ -36,6 +38,7 @@ const HomePage = () => {
   return (
     <main className='homepage'>
       <Home passedRef={homeRef} handleSectionChange={handleSectionChange} />
+      <LateralContact showLateralContact={!inView} />
       <WithHeader showHeader={!inView} handleSectionChange={handleSectionChange} activeSection={activeSection}>
         <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
           <About passedRef={aboutRef} />
