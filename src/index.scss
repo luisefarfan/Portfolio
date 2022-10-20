@@ -7,6 +7,22 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darkest-blue-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-blue-color);
+}
+
 * {
   box-sizing: border-box;
   color: var(--white-color);

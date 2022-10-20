@@ -110,7 +110,6 @@
   .sm-header-menu {
     overflow-y: auto;
     max-height: 80vh;
-    // scroll
     display: block;
     position: absolute;
     top: 100%;
@@ -129,7 +128,8 @@
       margin-bottom: 1rem;
     }
 
-    li:hover {
+    li:hover,
+    li.active {
       transform: scale(1.02);
       color: var(--blue-color);
       border-bottom: 2px solid var(--blue-color);
