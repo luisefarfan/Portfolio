@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { InView, useInView } from 'react-intersection-observer'
 import WithHeader from '../../components/Header/WithHeader'
-import LateralContact from '../../components/LateralContact'
+import ContactMenu from '../../components/ContactMenu'
 import { menuIds } from '../../content/home'
 import About from './About'
 import Experience from './Experience'
@@ -38,7 +38,7 @@ const HomePage = () => {
   return (
     <main className='homepage'>
       <Home passedRef={homeRef} handleSectionChange={handleSectionChange} />
-      <LateralContact showLateralContact={!inView} />
+      <ContactMenu showContactMenu={!inView} />
       <WithHeader showHeader={!inView} handleSectionChange={handleSectionChange} activeSection={activeSection}>
         <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
           <About passedRef={aboutRef} />

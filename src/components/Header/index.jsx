@@ -5,6 +5,7 @@ import Button from '../Button'
 import LanguageSelector from '../LanguageSelector'
 import StrokeText from '../StrokeText'
 import './Header.scss'
+import MobileMenu from './MobileMenu'
 
 const Header = ({ activeSection, handleSectionChange, showHeader }) => {
   const { lang } = useContext(LanguageContext)
@@ -39,19 +40,7 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
         <div className='sm-menu-button-line'></div>
         <div className='sm-menu-button-line'></div>
       </div>
-
-      <div className={`sm-header-menu ${openMenu && 'open'}`}>
-        <ul className='mb-16'>
-          <li onClick={() => changeSection(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
-          <li onClick={() => changeSection(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
-          <li onClick={() => changeSection(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
-          <li onClick={() => changeSection(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
-        </ul>
-        <div className='flex flex-col justify-around items-center'>
-          <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mb-5' />
-          <LanguageSelector />
-        </div>
-      </div>
+      <MobileMenu menu={menu} cv={cv} openMenu={openMenu} activeSection={activeSection} changeSection={changeSection} lang={lang} />
     </header>
   )
 }

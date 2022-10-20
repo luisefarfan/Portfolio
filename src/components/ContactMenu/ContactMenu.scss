@@ -1,4 +1,4 @@
-.lateral-contact {
+.contact-menu {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -24,12 +24,29 @@
   }
 }
 
-.lateral-contact.active {
+.contact-menu.active {
   opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
-  .lateral-contact {
+  .contact-menu:not(.mobile) {
     display: none;
+  }
+
+  .contact-menu.mobile {
+    display: flex;
+    position: unset;
+    opacity: 1;
+    flex-direction: row;
+    width: 100%;
+
+    .contact-item {
+      cursor: pointer;
+      transition: all .2s ease-in;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-5px);
+    }
   }
 }
