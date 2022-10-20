@@ -20,7 +20,7 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
 
   return (
     <header className={`header ${showHeader && 'visible'}`}>
-      <div className='lg:text-4xl md:text-3xl text-2xl'>
+      <div className='xl:text-4xl md:text-3xl text-2xl'>
         <span>Luis</span><StrokeText color={'white'}>Farfán</StrokeText>
       </div>
       <div className='header-menu'>
@@ -32,7 +32,7 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
         </ul>
       </div>
       <div className='lang-cv-container'>
-        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit md:mr-5 mb-5 md:mb-0' />
+        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mr-5' />
         <LanguageSelector />
       </div>
       <div className={`sm-menu-button ${openMenu && 'open'}`} onClick={() => setOpenMenu(!openMenu)}>

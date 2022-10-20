@@ -12,7 +12,7 @@ const ContactMenu = ({ showContactMenu, fromMobile }) => {
   const { phone, email, linkedin, github } = content
   return (
     <div className={`contact-menu ${showContactMenu && 'active'} ${fromMobile && 'mobile'}`}>
-      <NormalImage src={verticalPoints} className="mb-5 lg:block hidden" />
+      <NormalImage src={verticalPoints} className="mb-5 xl:block hidden" />
       <a href={`tel:${phone}`} className="contact-item">
         <NormalImage src={phoneImg} />
       </a>
