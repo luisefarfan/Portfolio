@@ -20,7 +20,9 @@
   .contact-item:hover {
     transform: translateX(7px);
   }
+}
 
+.contact-menu:not(.mobile) {
   >* {
     animation-fill-mode: forwards;
     animation-duration: 1s;
@@ -49,7 +51,12 @@
   }
 }
 
-.contact-menu.active {
+.contact-menu:not(.mobile).active {
+  >* {
+    animation-fill-mode: backwards;
+    animation-name: show;
+  }
+
   :nth-child(1) {
     animation-delay: 0s;
   }
@@ -68,11 +75,6 @@
 
   :nth-child(5) {
     animation-delay: 1s;
-  }
-
-  >* {
-    animation-fill-mode: backwards;
-    animation-name: show;
   }
 }
 
