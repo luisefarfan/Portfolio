@@ -12,6 +12,11 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
 
   const [openMenu, setOpenMenu] = useState(false)
 
+  const changeSection = (option) => {
+    handleSectionChange(option)
+    setOpenMenu(false)
+  }
+
   return (
     <header className={`header ${showHeader && 'visible'}`}>
       <div className='lg:text-4xl md:text-3xl text-2xl'>
@@ -19,10 +24,10 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
       </div>
       <div className='header-menu'>
         <ul>
-          <li onClick={() => handleSectionChange(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
-          <li onClick={() => handleSectionChange(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
-          <li onClick={() => handleSectionChange(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
-          <li onClick={() => handleSectionChange(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
+          <li onClick={() => changeSection(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
+          <li onClick={() => changeSection(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
+          <li onClick={() => changeSection(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
+          <li onClick={() => changeSection(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
         </ul>
       </div>
       <div className='lang-cv-container'>
@@ -37,10 +42,10 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
 
       <div className={`sm-header-menu ${openMenu && 'open'}`}>
         <ul className='mb-16'>
-          <li onClick={() => handleSectionChange(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
-          <li onClick={() => handleSectionChange(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
-          <li onClick={() => handleSectionChange(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
-          <li onClick={() => handleSectionChange(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
+          <li onClick={() => changeSection(menuIds.option1)} className={activeSection === menuIds.option1 && 'active'}>{menu.option1}</li>
+          <li onClick={() => changeSection(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
+          <li onClick={() => changeSection(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
+          <li onClick={() => changeSection(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
         </ul>
         <div className='flex flex-col justify-around items-center'>
           <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mb-5' />
