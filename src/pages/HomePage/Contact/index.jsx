@@ -22,7 +22,7 @@ const Contact = ({ passedRef }) => {
             </Title>
           </div>
         </Fade>
-        <Fade>
+        <Fade triggerOnce>
           <ContactMenu fromContact />
         </Fade>
       </div>
