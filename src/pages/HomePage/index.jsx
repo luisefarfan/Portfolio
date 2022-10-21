@@ -21,7 +21,7 @@ const HomePage = () => {
   const contactRef = useRef()
 
   const [homeRef, inView, entry] = useInView({
-    threshold: 0.5,
+    threshold: 0.75,
     initialInView: true
   })
 
