@@ -1,14 +1,15 @@
 const experienceContent = {
   en: {
-    title: 'Experience',
-    text: 'Lorem ipsum xerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in',
+    title1: 'My',
+    title2: 'Experience',
+    text: 'Below you will find my work experience. A list of all the positions I have had, the technologies I used in each one and the role I played in them.',
     experiences: [
       {
-        company: 'TELUS International',
+        company: 'TELUS International (2022 - Today)',
         description: 'I currently work as a Fullstack Developer using ReactJS, ExpressJS and NextJS. I am in charge of maintaining the TELUS Support page, carrying out new projects and fixing bugs. The biggest project I worked on was a complete migration from the old system in React v12 to NextJS with React v18.'
       },
       {
-        company: 'Homeland S.A.',
+        company: 'Homeland S.A. (2019 - 2021)',
         description: 'I worked as a Fullstack Web Developer using Symfony, HTML, Javascript, CSS, React, Docker and SQL. I worked on 2 big projects from scratch. I participated from the gathering of requirements, development, testing and deployment of the applications.'
       },
       {
@@ -19,11 +20,12 @@ const experienceContent = {
     ]
   },
   es: {
-    title: 'Experiencia',
-    text: 'A continuación se encuentra mi experiencia laboral',
+    title1: 'Mi',
+    title2: 'Experiencia',
+    text: 'A continuación encontrará mi experiencia laboral. Un listado de todos los puestos que he tenido, las tecnologías que usé en cada uno y el papel que desempeñaba en ellos.',
     experiences: [
       {
-        company: 'TELUS International (2022 - Actualidad)',
+        company: 'TELUS International (2022 - Hoy)',
         description: 'Trabajo actualmente como Fullstack Developer utilizando ReactJS, ExpressJS y NextJS. Estoy a cargo de mantener la página de TELUS Support, llevando a cabo nuevos proyectos y corrigiendo errores. El mayor proyecto que realicé fue una migración completa del sistema antiguo en React v12 a NextJS con React v18.'
       },
       {

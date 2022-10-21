@@ -29,6 +29,7 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
           <li onClick={() => changeSection(menuIds.option2)} className={activeSection === menuIds.option2 && 'active'}>{menu.option2}</li>
           <li onClick={() => changeSection(menuIds.option3)} className={activeSection === menuIds.option3 && 'active'}>{menu.option3}</li>
           <li onClick={() => changeSection(menuIds.option4)} className={activeSection === menuIds.option4 && 'active'}>{menu.option4}</li>
+          <li onClick={() => changeSection(menuIds.option5)} className={activeSection === menuIds.option5 && 'active'}>{menu.option5}</li>
         </ul>
       </div>
       <div className='lang-cv-container'>

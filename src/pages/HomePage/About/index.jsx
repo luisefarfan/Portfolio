@@ -19,16 +19,14 @@ const About = ({ passedRef }) => {
     <section ref={passedRef} className='about-section' id={menuIds.option1}>
       <Fade direction='left' triggerOnce>
         <div className='container'>
-          <div className='grid lg:grid-cols-2 grid-cols-1'>
-            <div className="lg:pr-10">
-              <RoundedImage src={aboutMeImage} />
-            </div>
-            <div className="flex flex-col justify-center lg:pl-10">
+          <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-8'>
+            <RoundedImage src={aboutMeImage} className="lg:w-full md:w-8/12 w-full" />
+            <div className="flex flex-col justify-center">
               <div className="flex items-center">
                 <Title level="h2">
                   <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
                 </Title>
-                <NormalImage src={icon} alt={`${title1} ${title2}`} className="ml-5" width={80} />
+                <NormalImage src={icon} alt={`${title1} ${title2}`} className="ml-5 md:w-20 w-16" />
               </div>
               <p className='mt-10'>{content}</p>
             </div>

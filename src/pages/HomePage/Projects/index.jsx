@@ -4,10 +4,11 @@ import { Title } from '../../../components/Title'
 import { LanguageContext } from '../../../content/context/LanguageContext'
 import projectsContent from '../../../content/projects'
 import ArrowImage from '../../../assets/pages/Projects/scrollImage.svg'
-import './Projects.scss'
+import CodingImage from '../../../assets/pages/Projects/coding.svg'
 import { NormalImage } from '../../../components/Image'
 import Project from '../../../components/Project'
 import { Fade } from 'react-awesome-reveal'
+import './Projects.scss'
 
 const Projects = ({ passedRef }) => {
   const { lang } = useContext(LanguageContext)
@@ -20,9 +21,12 @@ const Projects = ({ passedRef }) => {
         <Fade triggerOnce>
           <div className='flex justify-between'>
             <div>
-              <Title level="h2">
-                <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
-              </Title>
+              <div className='flex items-center mb-8'>
+                <Title level="h2">
+                  <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
+                </Title>
+                <NormalImage src={CodingImage} className="ml-6 lg:w-20 w-16" />
+              </div>
               <p>{text}</p>
             </div>
             <NormalImage src={ArrowImage} width={40} className='lg:block hidden animate-pulse' />
