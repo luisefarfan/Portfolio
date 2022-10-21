@@ -31,12 +31,11 @@
 
 @media only screen and (max-width: 767px) {
   .title-container {
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    transform: translate(-50%, -45%);
   }
 
   .cv-button-container {
-    bottom: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
