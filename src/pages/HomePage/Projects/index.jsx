@@ -35,7 +35,7 @@ const Projects = ({ passedRef }) => {
 
         <div className='flex flex-col mt-20'>
           {projects.map((project) => (
-            <Fade className='mb-10' triggerOnce>
+            <Fade direction='left' className='mb-10' triggerOnce key={project.title}>
               <Project project={project} lang={lang} />
             </Fade>
           ))}

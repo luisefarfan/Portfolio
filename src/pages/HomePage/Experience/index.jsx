@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Zoom, Fade, AttentionSeeker } from 'react-awesome-reveal'
+import { Fade, AttentionSeeker } from 'react-awesome-reveal'
 import ExperienceItem from '../../../components/ExperienceItem'
 import { NormalImage } from '../../../components/Image'
 import StrokeText from '../../../components/StrokeText'
@@ -18,14 +18,14 @@ const Experience = ({ passedRef }) => {
   return (
     <section id={menuIds.option2} ref={passedRef} className="experience-section">
       <div className='container'>
-        <Zoom triggerOnce>
+        <Fade triggerOnce>
           <div>
             <Title level="h2">
               <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
             </Title>
             <p className='lg:w-8/12 w-10/12'>{text}</p>
           </div>
-        </Zoom>
+        </Fade>
       </div>
 
       <div className='container mt-20'>
@@ -36,12 +36,10 @@ const Experience = ({ passedRef }) => {
             </Fade>
           </div>
           <div className='flex flex-col lg:col-span-8'>
-            {experiences.map((experience, index) => (
-              <AttentionSeeker effect='pulse' cascade>
-                <div className='mb-5' key={index}>
-                  <ExperienceItem experience={experience} />
-                </div>
-              </AttentionSeeker>
+            {experiences.map((experience) => (
+              <Fade direction='up' key={experience.company} className="mb-5" triggerOnce>
+                <ExperienceItem experience={experience} />
+              </Fade>
             ))}
           </div>
         </div>
