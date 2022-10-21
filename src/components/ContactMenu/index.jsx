@@ -26,17 +26,17 @@ const ContactMenu = ({ showContactMenu, fromMobile, fromContact }) => {
       }
       <div className={`contact-menu ${showContactMenu && 'active'} ${fromMobile && 'mobile'} ${fromContact && 'contact'}`}>
         {!fromContact && <NormalImage src={verticalPoints} className="mb-5 xl:block hidden" />}
-        <a onMouseEnter={() => setHoveredContact('phone')} onMouseLeave={() => setHoveredContact('')} href={`tel:${phone}`} className="contact-item">
-          <NormalImage src={hoveredContact === 'phone' ? phoneHoverImg : phoneImg} />
+        <a onMouseEnter={() => setHoveredContact(phone.label)} onMouseLeave={() => setHoveredContact('')} href={`tel:${phone.value}`} className="contact-item">
+          <NormalImage src={hoveredContact === phone.label ? phoneHoverImg : phoneImg} alt={`${phone.label}: ${phone.value}`} />
         </a>
-        <a onMouseEnter={() => setHoveredContact('email')} onMouseLeave={() => setHoveredContact('')} href={`mailto:${email}`} className="contact-item">
-          <NormalImage src={hoveredContact === 'email' ? emailHoverImg : emailImg} />
+        <a onMouseEnter={() => setHoveredContact(email.label)} onMouseLeave={() => setHoveredContact('')} href={`mailto:${email.value}`} className="contact-item">
+          <NormalImage src={hoveredContact === email.label ? emailHoverImg : emailImg} alt={`${email.label}: ${email.value}`} />
         </a>
-        <a onMouseEnter={() => setHoveredContact('linkedin')} onMouseLeave={() => setHoveredContact('')} href={linkedin} className="contact-item" target="_blank">
-          <NormalImage src={hoveredContact === 'linkedin' ? linkedinHoverImg : linkedinImg} />
+        <a onMouseEnter={() => setHoveredContact(linkedin.label)} onMouseLeave={() => setHoveredContact('')} href={linkedin.value} className="contact-item" target="_blank">
+          <NormalImage src={hoveredContact === linkedin.label ? linkedinHoverImg : linkedinImg} alt={`${linkedin.label}: ${linkedin.value}`} />
         </a>
-        <a onMouseEnter={() => setHoveredContact('github')} onMouseLeave={() => setHoveredContact('')} href={github} className="contact-item" target="_blank">
-          <NormalImage src={hoveredContact === 'github' ? githubHoverImg : githubImg} />
+        <a onMouseEnter={() => setHoveredContact(github.label)} onMouseLeave={() => setHoveredContact('')} href={github.value} className="contact-item" target="_blank">
+          <NormalImage src={hoveredContact === github.label ? githubHoverImg : githubImg} alt={`${github.label}: ${github.value}`} />
         </a>
       </div>
     </>
