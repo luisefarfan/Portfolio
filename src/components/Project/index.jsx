@@ -17,7 +17,7 @@ const Project = ({ project, lang }) => {
         <Title level='h5' className='color-white'>{subtitle}</Title>
         <p>{description}</p>
 
-        <Button href={url} text={seeMore} color="blue" className='w-fit mt-5' />
+        {url && <Button href={url} text={seeMore} color="blue" className='w-fit mt-5' />}
       </div>
       <NormalImage src={img} alt={title} className="block lg:hidden" />
     </div>

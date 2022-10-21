@@ -2,7 +2,7 @@ const experienceContent = {
   en: {
     title1: 'My',
     title2: 'Experience',
-    text: 'Below you will find my work experience. A list of all the positions I have had, the technologies I used in each one and the role I played in them.',
+    text: 'Below you will find information about my work experience. A list of all the positions I have had, the technologies I used in each one and the role I played in them.',
     experiences: [
       {
         company: 'TELUS International (2022 - Today)',
@@ -22,7 +22,7 @@ const experienceContent = {
   es: {
     title1: 'Mi',
     title2: 'Experiencia',
-    text: 'A continuación encontrará mi experiencia laboral. Un listado de todos los puestos que he tenido, las tecnologías que usé en cada uno y el papel que desempeñaba en ellos.',
+    text: 'A continuación encontrará información sobre mi experiencia laboral. Un listado de todos los puestos que he tenido, las tecnologías que usé en cada uno y el papel que desempeñaba en ellos.',
     experiences: [
       {
         company: 'TELUS International (2022 - Hoy)',

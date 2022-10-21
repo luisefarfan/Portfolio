@@ -48,10 +48,10 @@ const projectsContent = {
         img: project5Img
       },
       {
-        title: 'Portafolio V1',
+        title: 'Portfolio V1',
         subtitle: '',
-        description: 'First version of my portfolio, created with React and TailwindCSS.',
-        url: 'https://luis-farfan.vercel.app',
+        description: 'This webpage (Portfolio V1) is the first version of my portfolio, created with React and TailwindCSS.',
+        // url: 'https://luis-farfan.vercel.app',
         img: portfolioV1Img
       }
     ]
@@ -100,8 +100,8 @@ const projectsContent = {
       {
         title: 'Portafolio V1',
         subtitle: '',
-        description: 'Primera versión de mi portafolio, creado con React y TailwindCSS.',
-        url: 'https://luis-farfan.vercel.app',
+        description: 'Este sitio web (Portafolio V1) es la primera versión de mi portafolio, creado con React y TailwindCSS.',
+        // url: 'https://luis-farfan.vercel.app',
         img: portfolioV1Img
       }
     ]
