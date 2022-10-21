@@ -19,7 +19,7 @@ const About = ({ passedRef }) => {
     <section ref={passedRef} className='about-section' id={menuIds.option1}>
       <Fade direction='left' triggerOnce>
         <div className='container'>
-          <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-8'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center xl:gap-20 lg:gap-8 gap-8'>
             <RoundedImage src={aboutMeImage} className="lg:w-full md:w-8/12 w-full" />
             <div className="flex flex-col justify-center">
               <div className="flex items-center">
