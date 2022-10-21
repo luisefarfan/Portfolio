@@ -20,7 +20,7 @@ const Experience = ({ passedRef }) => {
       <div className='container'>
         <Fade triggerOnce>
           <div>
-            <Title level="h2">
+            <Title level="h2" className="flex flex-wrap">
               <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
             </Title>
             <p className='lg:w-8/12 w-10/12'>{text}</p>

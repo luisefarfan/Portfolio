@@ -21,11 +21,11 @@ const Projects = ({ passedRef }) => {
         <Fade triggerOnce>
           <div className='flex justify-between'>
             <div>
-              <div className='flex items-center mb-8'>
-                <Title level="h2">
+              <div className='flex flex-wrap items-center mb-8'>
+                <Title level="h2" className="flex flex-wrap">
                   <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
                 </Title>
-                <NormalImage src={CodingImage} className="ml-6 lg:w-20 w-16" />
+                <NormalImage src={CodingImage} className="md:ml-6 ml-4 lg:w-20 w-12" />
               </div>
               <p>{text}</p>
             </div>

@@ -137,6 +137,7 @@
 
 @media screen and (max-width: 767px) {
   .contact-menu.contact {
+    flex-wrap: wrap;
     gap: 0.5rem;
 
     .contact-item:hover {
@@ -144,8 +145,8 @@
     }
 
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 }
