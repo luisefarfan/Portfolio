@@ -6,6 +6,7 @@ import aboutContent from '../../../content/about'
 import { LanguageContext } from '../../../content/context/LanguageContext'
 import icon from '../../../assets/pages/About/aboutIcon.svg'
 import aboutMeImage from '../../../assets/pages/About/aboutMeImage.jpg'
+import aboutMeImageCompressed from '../../../assets/pages/About/aboutMeImageCompressed.jpg'
 import { NormalImage, RoundedImage } from '../../../components/Image'
 import { menuIds } from '../../../content/home'
 import './About.scss'
@@ -26,7 +27,7 @@ const About = ({ passedRef }) => {
                 <Title level="h2" className="flex flex-wrap">
                   <span className='color-blue'>{title1}</span><StrokeText color={'blue'}>{title2}</StrokeText>
                 </Title>
-                <NormalImage src={icon} alt={`${title1} ${title2}`} className="md:ml-5 ml-4 md:w-20 w-12" />
+                <NormalImage lazyLoad compressedSrc={aboutMeImageCompressed} src={icon} alt={`${title1} ${title2}`} className="md:ml-5 ml-4 md:w-20 w-12" />
               </div>
               <p className='mt-10'>{content}</p>
             </div>
