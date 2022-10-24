@@ -1,9 +1,10 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './Image.scss'
 
 const Image = ({ src, alt, width, height }) => {
   return (
-    <img src={src} alt={alt} style={{ objectFit: 'cover' }} width={width} height={height} />
+    <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} width={width} height={height} />
   )
 }
 
