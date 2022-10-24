@@ -5,7 +5,7 @@ import './Image.scss'
 
 const Image = ({ src, compressedSrc, alt, width, height, lazyLoad }) => {
   if (lazyLoad) return (
-    <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} placeholderSrc={compressedSrc} effect="blur" width={width} height={height} />
+    <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} placeholderSrc={compressedSrc} width={width} height={height} />
   )
 
   return (
