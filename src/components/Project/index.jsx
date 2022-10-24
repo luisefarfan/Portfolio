@@ -11,7 +11,7 @@ const Project = ({ project, lang }) => {
 
   return (
     <div className='grid lg:items-center lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-8'>
-      <NormalImage src={img} alt={title} className="lg:block hidden" />
+      <NormalImage lazyLoad compressedSrc={compressedImg} src={img} alt={title} className="lg:block hidden" />
       <div className='project-info'>
         <Title level='h3' className='color-blue'>{title}</Title>
         <Title level='h5' className='color-white'>{subtitle}</Title>
