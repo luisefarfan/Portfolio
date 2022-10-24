@@ -1,10 +1,15 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import carolinaCompressed from '../../assets/pages/Projects/carolinaCompress.jpg'
 import './Image.scss'
 
-const Image = ({ src, alt, width, height }) => {
+const Image = ({ src, compressedSrc, alt, width, height, lazyLoad }) => {
+  if (lazyLoad) return (
+    <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} placeholderSrc={compressedSrc} width={width} height={height} />
+  )
+
   return (
-    <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} width={width} height={height} />
+    <img src={src} alt={alt} style={{ objectFit: 'cover' }} width={width} height={height} />
   )
 }
 

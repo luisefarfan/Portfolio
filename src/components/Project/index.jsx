@@ -6,7 +6,7 @@ import { Title } from '../Title'
 import './Project.scss'
 
 const Project = ({ project, lang }) => {
-  const { title, subtitle, description, url, img } = project
+  const { title, subtitle, description, url, img, compressedImg } = project
   const { seeMore } = projectsContent[lang]
 
   return (
@@ -19,7 +19,7 @@ const Project = ({ project, lang }) => {
 
         {url && <Button href={url} text={seeMore} color="blue" className='w-fit mt-5' />}
       </div>
-      <NormalImage src={img} alt={title} className="block lg:hidden" />
+      <NormalImage lazyLoad compressedSrc={compressedImg} src={img} alt={title} className="block lg:hidden" />
     </div>
   )
 }
