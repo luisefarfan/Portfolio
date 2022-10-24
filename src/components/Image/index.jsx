@@ -4,6 +4,7 @@ import carolinaCompressed from '../../assets/pages/Projects/carolinaCompress.jpg
 import './Image.scss'
 
 const Image = ({ src, compressedSrc, alt, width, height, lazyLoad }) => {
+  debugger
   if (lazyLoad) return (
     <LazyLoadImage src={src} alt={alt} style={{ objectFit: 'cover' }} placeholderSrc={compressedSrc} width={width} height={height} />
   )
