@@ -32,25 +32,27 @@
 @media only screen and (max-width: 1023px) {
   .home-section {
     height: auto;
-    padding-bottom: 4rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
   }
 
   .title-container {
-    // top: 45%;
-    // transform: translate(-50%, -45%);
     position: static;
     width: 100%;
     display: flex;
     justify-content: center;
     transform: translate(0, 0);
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .cv-button-container {
-    margin-top: 4rem;
+    margin-top: 5rem;
     position: static;
+    flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
 }
