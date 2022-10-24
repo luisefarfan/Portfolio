@@ -21,8 +21,9 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .home-menu {
+    position: static;
     list-style: none;
     padding: 0;
     margin: 0;
