@@ -35,7 +35,12 @@ const skillsContent = {
       },
       {
         title: 'React',
-        description: '2 years',
+        description: '3 years',
+        img: cssImg
+      },
+      {
+        title: 'Redux',
+        description: '1 year',
         img: cssImg
       },
       {
@@ -55,7 +60,7 @@ const skillsContent = {
       },
       {
         title: 'NextJS',
-        description: '1 years',
+        description: '1 year',
         img: cssImg
       },
       {
@@ -80,7 +85,7 @@ const skillsContent = {
       },
       {
         title: 'Tailwind CSS',
-        description: '1 years',
+        description: '1 year',
         img: cssImg
       },
       {
@@ -100,12 +105,12 @@ const skillsContent = {
       },
       {
         title: 'AWS',
-        description: '1 years',
+        description: '1 year',
         img: cssImg
       },
       {
         title: 'GCP',
-        description: '1 years',
+        description: '1 year',
         img: cssImg
       },
       {
@@ -125,7 +130,7 @@ const skillsContent = {
       },
       {
         title: 'React Testing Library',
-        description: '1 years',
+        description: '1 year',
         img: cssImg
       },
       {
@@ -172,7 +177,12 @@ const skillsContent = {
       },
       {
         title: 'React',
-        description: '2 años',
+        description: '3 años',
+        img: cssImg
+      },
+      {
+        title: 'Redux',
+        description: '1 año',
         img: cssImg
       },
       {
@@ -192,7 +202,7 @@ const skillsContent = {
       },
       {
         title: 'NextJS',
-        description: '1 años',
+        description: '1 año',
         img: cssImg
       },
       {
@@ -217,7 +227,7 @@ const skillsContent = {
       },
       {
         title: 'Tailwind CSS',
-        description: '1 años',
+        description: '1 año',
         img: cssImg
       },
       {
@@ -237,12 +247,12 @@ const skillsContent = {
       },
       {
         title: 'AWS',
-        description: '1 años',
+        description: '1 año',
         img: cssImg
       },
       {
         title: 'GCP',
-        description: '1 años',
+        description: '1 año',
         img: cssImg
       },
       {
@@ -262,7 +272,7 @@ const skillsContent = {
       },
       {
         title: 'React Testing Library',
-        description: '1 años',
+        description: '1 año',
         img: cssImg
       },
       {
