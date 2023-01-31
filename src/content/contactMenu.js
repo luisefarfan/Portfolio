@@ -8,7 +8,7 @@ const contactMenuContent = {
     label: 'Email'
   },
   linkedin: {
-    value: 'https://www.linkedin.com/in/luis-enrique-farf%C3%A1n-prado-5350781b5/',
+    value: 'https://www.linkedin.com/in/luisefarfan/',
     label: 'LinkedIn'
   },
   github: {
