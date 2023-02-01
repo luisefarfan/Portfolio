@@ -148,8 +148,8 @@ const skillsContent = {
   es: {
     title1: 'Tecnologías y',
     title2: 'Habilidades',
-    text: 'Debajo se encuentra el listado de las tecnologías y lenguages en los que tengo conocimiento y experiencia, así como habilidades importantes que tengo como persona y profesional.',
-    techTitle: 'Tecnologías y lenguages',
+    text: 'Debajo se encuentra el listado de las tecnologías y lenguajes en los que tengo conocimiento y experiencia, así como habilidades importantes que tengo como persona y profesional.',
+    techTitle: 'Tecnologías y lenguajes',
     softTitle: 'Habilidades blandas',
     softSkills: [
       {
