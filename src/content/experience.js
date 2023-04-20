@@ -6,7 +6,7 @@ const experienceContent = {
     experiences: [
       {
         company: 'TELUS International (2022 - Today)',
-        description: 'I currently work as a Fullstack Developer using ReactJS, ExpressJS and NextJS. I am in charge of maintaining the TELUS Support page, carrying out new projects and fixing bugs. The biggest project I worked on was a complete migration from the old system in React v12 to NextJS with React v18.'
+        description: 'I currently work as a Fullstack Developer using React.js, Express.js and Next.js. I am in charge of maintaining the TELUS Support page, carrying out new projects and fixing bugs. The biggest project I worked on was a complete migration from the old system in React v12 to NextJS with React v18.'
       },
       {
         company: 'Homeland S.A. (2019 - 2021)',
@@ -26,7 +26,7 @@ const experienceContent = {
     experiences: [
       {
         company: 'TELUS International (2022 - Hoy)',
-        description: 'Trabajo actualmente como Fullstack Developer utilizando ReactJS, ExpressJS y NextJS. Estoy a cargo de mantener la página de TELUS Support, llevando a cabo nuevos proyectos y corrigiendo errores. El mayor proyecto que realicé fue una migración completa del sistema antiguo en React v12 a NextJS con React v18.'
+        description: 'Trabajo actualmente como Fullstack Developer utilizando React.js, Express.js y Next.js. Estoy a cargo de mantener la página de TELUS Support, llevando a cabo nuevos proyectos y corrigiendo errores. El mayor proyecto que realicé fue una migración completa del sistema antiguo en React v12 a NextJS con React v18.'
       },
       {
         company: 'Homeland S.A. (2019 - 2021)',

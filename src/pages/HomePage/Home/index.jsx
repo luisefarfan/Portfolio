@@ -27,7 +27,9 @@ const Home = ({ passedRef, handleSectionChange }) => {
       </div>
       <div className='cv-button-container'>
         <Fade direction='up' delay={500} triggerOnce>
-          <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit lg:mr-5 lg:mb-0 mb-5' />
+          {/* <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit lg:mr-5 lg:mb-0 mb-5' /> */}
+          {/* Temporary, while I create the spanish CV */}
+          <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-en.pdf`} text={cv} color="blue" className='w-fit lg:mr-5 lg:mb-0 mb-5' />
           <LanguageSelector />
         </Fade>
       </div>

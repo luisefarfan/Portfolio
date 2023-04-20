@@ -1,3 +1,4 @@
+import telussupportImg from '../assets/pages/Projects/telussupport.jpg'
 import project1Img from '../assets/pages/Projects/koleyo.png'
 // import project1ImgCompressed from '../assets/pages/Projects/koleyoCompress.jpg'
 import project2Img from '../assets/pages/Projects/priscilla.jpg'
@@ -18,6 +19,14 @@ const projectsContent = {
     text: 'Below you will find all the professional projects I have worked on.',
     seeMore: 'Visit',
     projects: [
+      {
+        title: 'TELUS Support',
+        subtitle: '',
+        description: 'TELUS Support website. Created with Next.js, using React 18, Jest, and React Testing Library.',
+        url: 'https://www.telus.com/support',
+        img: telussupportImg,
+        // compressedImg: project1ImgCompressed
+      },
       {
         title: 'Koleyo',
         subtitle: '',
@@ -74,6 +83,14 @@ const projectsContent = {
     text: 'A continuación encontrará todos los proyectos profesionales en los que he trabajado.',
     seeMore: 'Ver',
     projects: [
+      {
+        title: 'TELUS Support',
+        subtitle: '',
+        description: 'Página web de TELUS Support. Creada con Next.js, usando React 18, Jest y React Testing Library.',
+        url: 'https://www.telus.com/support',
+        img: telussupportImg,
+        // compressedImg: project1ImgCompressed
+      }, ,
       {
         title: 'Koleyo',
         subtitle: '',

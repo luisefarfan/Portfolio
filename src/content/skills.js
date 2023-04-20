@@ -49,17 +49,17 @@ const skillsContent = {
         img: cssImg
       },
       {
-        title: 'NodeJS',
+        title: 'Node.js',
         description: '3 years',
         img: cssImg
       },
       {
-        title: 'ExpressJS',
+        title: 'Express.js',
         description: '3 years',
         img: cssImg
       },
       {
-        title: 'NextJS',
+        title: 'Next.js',
         description: '1 year',
         img: cssImg
       },
@@ -191,17 +191,17 @@ const skillsContent = {
         img: cssImg
       },
       {
-        title: 'NodeJS',
+        title: 'Node.js',
         description: '3 años',
         img: cssImg
       },
       {
-        title: 'ExpressJS',
+        title: 'Express.js',
         description: '3 años',
         img: cssImg
       },
       {
-        title: 'NextJS',
+        title: 'Next.js',
         description: '1 año',
         img: cssImg
       },
