@@ -33,7 +33,9 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
         </ul>
       </div>
       <div className='lang-cv-container'>
-        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mr-5' />
+        {/* <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mr-5' /> */}
+        {/* TODO add again the CV based on the lang */}
+        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-en.pdf`} text={cv} color="blue" className='w-fit mr-5' />
         <LanguageSelector />
       </div>
       <div className={`sm-menu-button ${openMenu && 'open'}`} onClick={() => setOpenMenu(!openMenu)}>

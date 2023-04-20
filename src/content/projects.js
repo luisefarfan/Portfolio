@@ -1,4 +1,5 @@
 import telussupportImg from '../assets/pages/Projects/telussupport.jpg'
+import mayacertImg from '../assets/pages/Projects/mayacert.jpg'
 import project1Img from '../assets/pages/Projects/koleyo.png'
 // import project1ImgCompressed from '../assets/pages/Projects/koleyoCompress.jpg'
 import project2Img from '../assets/pages/Projects/priscilla.jpg'
@@ -20,9 +21,17 @@ const projectsContent = {
     seeMore: 'Visit',
     projects: [
       {
+        title: 'Mayacert S.A.',
+        subtitle: 'In progress...',
+        description: 'Mayacert\'s website. Includes an admin site to manage all the content.',
+        url: '',
+        img: mayacertImg,
+        // compressedImg: project1ImgCompressed
+      },
+      {
         title: 'TELUS Support',
         subtitle: '',
-        description: 'TELUS Support website. Created with Next.js, using React 18, Jest, and React Testing Library.',
+        description: 'TELUS Support website. Created with Next.js, using React 18, Redux, Jest, and React Testing Library.',
         url: 'https://www.telus.com/support',
         img: telussupportImg,
         // compressedImg: project1ImgCompressed
@@ -84,9 +93,17 @@ const projectsContent = {
     seeMore: 'Ver',
     projects: [
       {
+        title: 'Mayacert S.A.',
+        subtitle: 'En progreso...',
+        description: 'Página web de Mayacert. Incluye un sitio administrativo para controlar todo el contenido de la página.',
+        url: '',
+        img: mayacertImg,
+        // compressedImg: project1ImgCompressed
+      },
+      {
         title: 'TELUS Support',
         subtitle: '',
-        description: 'Página web de TELUS Support. Creada con Next.js, usando React 18, Jest y React Testing Library.',
+        description: 'Página web de TELUS Support. Creada con Next.js, usando React 18, Redux, Jest y React Testing Library.',
         url: 'https://www.telus.com/support',
         img: telussupportImg,
         // compressedImg: project1ImgCompressed
