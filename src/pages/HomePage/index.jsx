@@ -30,8 +30,8 @@ const HomePage = () => {
       [menuIds.home]: homeRef,
       [menuIds.option1]: aboutRef,
       [menuIds.option2]: experienceRef,
-      [menuIds.option3]: skillsRef,
-      [menuIds.option4]: projectsRef,
+      [menuIds.option3]: projectsRef,
+      [menuIds.option4]: skillsRef,
       [menuIds.option5]: contactRef
     }
 
@@ -50,10 +50,10 @@ const HomePage = () => {
           <Experience passedRef={experienceRef} />
         </InView>
         <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
-          <Skills passedRef={skillsRef} />
+          <Projects passedRef={projectsRef} />
         </InView>
         <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option4)}>
-          <Projects passedRef={projectsRef} />
+          <Skills passedRef={skillsRef} />
         </InView>
         <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option5)}>
           <Contact passedRef={contactRef} />
