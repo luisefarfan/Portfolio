@@ -7,7 +7,7 @@ import ArrowImage from '../../../assets/pages/Projects/scrollImage.svg'
 import CodingImage from '../../../assets/pages/Projects/coding.svg'
 import { NormalImage } from '../../../components/Image'
 import Project from '../../../components/Project'
-import { Fade } from 'react-awesome-reveal'
+import { FadeAnimation as Fade } from '../../../components/Animation'
 import './Projects.scss'
 
 const Projects = ({ passedRef }) => {
@@ -35,7 +35,7 @@ const Projects = ({ passedRef }) => {
 
         <div className='flex flex-col mt-20'>
           {projects.map((project) => (
-            <Fade direction='left' className='mb-10' triggerOnce key={project.title}>
+            <Fade direction='left' className='mb-10' triggerOnce key={project.title} duration={1000}>
               <Project project={project} lang={lang} />
             </Fade>
           ))}

@@ -1,15 +1,14 @@
 import React, { useRef, useState } from 'react'
 import { InView, useInView } from 'react-intersection-observer'
-import WithHeader from '../../components/Header/WithHeader'
+import Header from '../../components/Header'
 import ContactMenu from '../../components/ContactMenu'
 import { menuIds } from '../../content/home'
 import About from './About'
 import Experience from './Experience'
-import Home from './Home'
 import Projects from './Projects'
 import Skills from './Skills'
-import './HomePage.scss'
 import Contact from './Contact'
+import './HomePage.scss'
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState('')
@@ -20,7 +19,7 @@ const HomePage = () => {
   const projectsRef = useRef()
   const contactRef = useRef()
 
-  const [homeRef, inView, entry] = useInView({
+  const [homeRef] = useInView({
     threshold: 0.75,
     initialInView: true
   })
@@ -39,26 +38,24 @@ const HomePage = () => {
   }
 
   return (
-    <main className='homepage'>
-      <Home passedRef={homeRef} handleSectionChange={handleSectionChange} />
-      <ContactMenu showContactMenu={!inView} />
-      <WithHeader showHeader={!inView} handleSectionChange={handleSectionChange} activeSection={activeSection}>
-        <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
-          <About passedRef={aboutRef} />
-        </InView>
-        <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option2)}>
-          <Experience passedRef={experienceRef} />
-        </InView>
-        <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
-          <Projects passedRef={projectsRef} />
-        </InView>
-        <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option4)}>
-          <Skills passedRef={skillsRef} />
-        </InView>
-        <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option5)}>
-          <Contact passedRef={contactRef} />
-        </InView>
-      </WithHeader>
+    <main className='homepage full-container'>
+      <ContactMenu />
+      <Header handleSectionChange={handleSectionChange} activeSection={activeSection} />
+      <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option1)}>
+        <About passedRef={aboutRef} />
+      </InView>
+      <InView threshold={0.25} onChange={(inView) => inView && setActiveSection(menuIds.option2)}>
+        <Experience passedRef={experienceRef} />
+      </InView>
+      <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option3)}>
+        <Projects passedRef={projectsRef} />
+      </InView>
+      <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option4)}>
+        <Skills passedRef={skillsRef} />
+      </InView>
+      <InView threshold={0.1} onChange={(inView) => inView && setActiveSection(menuIds.option5)}>
+        <Contact passedRef={contactRef} />
+      </InView>
     </main>
   )
 }

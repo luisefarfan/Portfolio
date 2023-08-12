@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Fade } from 'react-awesome-reveal'
+import { FadeAnimation as Fade } from '../../../components/Animation'
 import StrokeText from '../../../components/StrokeText'
 import { Title } from '../../../components/Title'
 import aboutContent from '../../../content/about'

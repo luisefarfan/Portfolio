@@ -13,7 +13,7 @@ import horizontalPoints from '../../assets/components/ContactMenu/horizontalPoin
 import content from '../../content/contactMenu'
 import './ContactMenu.scss'
 
-const ContactMenu = ({ showContactMenu, fromMobile, fromContact }) => {
+const ContactMenu = ({ fromMobile, fromContact }) => {
   const { phone, email, linkedin, github } = content
   const [hoveredContact, setHoveredContact] = useState('')
 
@@ -24,7 +24,7 @@ const ContactMenu = ({ showContactMenu, fromMobile, fromContact }) => {
           <NormalImage src={horizontalPoints} className="mb-5" />
         </div>
       }
-      <div className={`contact-menu ${showContactMenu && 'active'} ${fromMobile && 'mobile'} ${fromContact && 'contact'}`}>
+      <div className={`contact-menu active ${fromMobile && 'mobile'} ${fromContact && 'contact'}`}>
         {!fromContact && <NormalImage src={verticalPoints} className="mb-5 xl:block hidden" />}
         <a onMouseEnter={() => setHoveredContact(phone.label)} onMouseLeave={() => setHoveredContact('')} href={`tel:${phone.value}`} className="contact-item">
           <NormalImage src={phoneImg} alt={`${phone.label}: ${phone.value}`} className={hoveredContact === phone.label ? 'hidden' : 'block'} />

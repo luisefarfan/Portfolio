@@ -7,7 +7,7 @@ import StrokeText from '../StrokeText'
 import './Header.scss'
 import MobileMenu from './MobileMenu'
 
-const Header = ({ activeSection, handleSectionChange, showHeader }) => {
+const Header = ({ activeSection, handleSectionChange }) => {
   const { lang } = useContext(LanguageContext)
   const { menu, cv } = homeContent[lang]
 
@@ -19,7 +19,7 @@ const Header = ({ activeSection, handleSectionChange, showHeader }) => {
   }
 
   return (
-    <header className={`header ${showHeader && 'visible'}`}>
+    <header className='header'>
       <div className='xl:text-4xl md:text-3xl text-2xl'>
         <span>Luis</span><StrokeText color={'white'}>Farfán</StrokeText>
       </div>

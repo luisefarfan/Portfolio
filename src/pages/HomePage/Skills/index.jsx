@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { AttentionSeeker, Fade } from 'react-awesome-reveal'
 import Carousel from '../../../components/Carousel'
 import CarouselItem from '../../../components/Carousel/CarouselItem'
 import StrokeText from '../../../components/StrokeText'
 import { Title } from '../../../components/Title'
 import { LanguageContext } from '../../../content/context/LanguageContext'
 import skillsContent from '../../../content/skills'
+import { FadeAnimation as Fade } from '../../../components/Animation'
 import './Skills.scss'
 
 const Skills = ({ passedRef }) => {

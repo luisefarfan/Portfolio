@@ -58,7 +58,7 @@
   }
 }
 
-.contact-menu:not(.mobile):not(.contact).active {
+.contact-menu:not(.mobile):not(.contact) {
   :nth-child(1) {
     animation-delay: 0s;
   }
