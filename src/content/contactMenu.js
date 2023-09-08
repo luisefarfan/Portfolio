@@ -12,7 +12,7 @@ const contactMenuContent = {
     label: 'LinkedIn'
   },
   github: {
-    value: 'https://github.com/LuisFarfan57',
+    value: 'https://github.com/luisefarfan',
     label: 'Github'
   },
 }

@@ -16,9 +16,9 @@ const MobileMenu = ({ openMenu, activeSection, changeSection, menu, cv, lang }) 
         <li onClick={() => changeSection(menuIds.option5)} className={activeSection === menuIds.option5 ? 'active' : ''}>{menu.option5}</li>
       </ul>
       <div className='flex flex-col justify-around items-center mb-5'>
-        {/* <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mb-3' /> */}
+        {/* <Button href={`https://portfolio.luisefarfan.com/cv-${lang}.pdf`} text={cv} color="blue" className='w-fit mb-3' /> */}
         {/* TODO add the cv based on the lang again */}
-        <Button href={`https://luis-farfan-cv.s3.amazonaws.com/cv-en.pdf`} text={cv} color="blue" className='w-fit mb-3' />
+        <Button href={`https://portfolio.luisefarfan.com/cv-en.pdf`} text={cv} color="blue" className='w-fit mb-3' />
         <LanguageSelector />
       </div>
       <ContactMenu fromMobile />

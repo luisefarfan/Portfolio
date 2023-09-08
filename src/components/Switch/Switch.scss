@@ -7,7 +7,6 @@
 
 .toggle {
   position: relative;
-  border: solid var(--border-width) var(--accent);
   border-radius: var(--border-radius);
   transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
   transform-style: preserve-3d;
