@@ -22,9 +22,9 @@ const projectsContent = {
     projects: [
       {
         title: 'Mayacert S.A.',
-        subtitle: 'In progress...',
-        description: 'Mayacert\'s website. Includes an admin site to manage all the content.',
-        url: '',
+        subtitle: '',
+        description: 'Mayacert\'s website. Includes an admin site to manage all the content. Built with Symfony (PHP), Stimulus (Javascript library), HTML, TailwidCSS and PostgreSQL. I used a Docker development environment. I led the development team and made the architecture of the website.',
+        url: 'https://www.mayacert.com',
         img: mayacertImg,
         // compressedImg: project1ImgCompressed
       },
@@ -94,9 +94,9 @@ const projectsContent = {
     projects: [
       {
         title: 'Mayacert S.A.',
-        subtitle: 'En progreso...',
-        description: 'Página web de Mayacert. Incluye un sitio administrativo para controlar todo el contenido de la página.',
-        url: '',
+        subtitle: '',
+        description: 'Sitio web de Mayacert. Incluye un sitio de administración para administrar todo el contenido. Construido con Symfony (PHP), Stimulus (librería Javascript), HTML, TailwidCSS y PostgreSQL. Utilicé un entorno de desarrollo Docker. Lideré el equipo de desarrollo e hice la arquitectura del sitio web.',
+        url: 'https://www.mayacert.com',
         img: mayacertImg,
         // compressedImg: project1ImgCompressed
       },
