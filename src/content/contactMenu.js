@@ -4,7 +4,7 @@ const contactMenuContent = {
     label: 'Phone'
   },
   email: {
-    value: 'luise.prado99@hotmail.com',
+    value: 'luisefarfan.dev@gmail.com',
     label: 'Email'
   },
   linkedin: {
